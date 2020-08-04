@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    maven {
+        url = '<Maven repository>'
+    }
+}
+
+dependencies {
+    implementation "junit:junit:4.13"
+}
