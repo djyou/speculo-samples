@@ -1,0 +1,19 @@
+plugins {
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'junit'
+            artifactId = 'junit'
+            version = '4.13'
+            artifact 'junit-4.13.jar'
+        }
+    }
+    repositories {
+        maven {
+            url = '<Maven repository URL>'
+        }
+    }
+}
